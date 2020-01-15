@@ -16,6 +16,6 @@ int main(){
         for (int i = 0; i < 4; i++){
             sum+=array[i][j];
         }
-        printf("Average: e%f \n", sum/4);
+        printf("Average: %f \n", sum/4);
     }
 }
