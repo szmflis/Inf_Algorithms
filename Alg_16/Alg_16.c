@@ -6,12 +6,14 @@
 int main(){
     int vector_1[3] = {2,3,4};
     int vector_2[3] = {5,5,5};
-    vector_calc(vector_1, 3, vector_2, 3);
+    
+    int result_vector[3] = {0,0,0};
+    
+    for (int i = 0; i<3; i++){
+        result_vector[i] = vector_1[i]*vector_2[i];
+    }
 
-}
-
-int vector_calc(int vector_1[],int n, int vector_2[], int m){
-    if (n != m){
-        printf("Input vectors are of unequal size");
+    for (int i = 0; i<3; i++){
+        printf("%d ,", result_vector[i]); 
     }
 }
